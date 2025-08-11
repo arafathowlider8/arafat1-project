@@ -1,0 +1,30 @@
+<!-- admin.html -->
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body class="admin-panel">
+  <div id="admin-login">
+    <h2>এডমিন লগইন</h2>
+    <input type="email" id="adminEmail" placeholder="আপনার Gmail দিন">
+    <button onclick="adminLogin()">লগইন করুন</button>
+  </div>
+
+  <div id="admin-dashboard" style="display:none;">
+    <h2>Welcome, Admin!</h2>
+    <button onclick="logout()">লগআউট</button>
+
+    <h3>প্রোডাক্ট যোগ করুন</h3>
+    <input type="text" placeholder="প্রোডাক্ট নাম" id="productName">
+    <input type="file" id="productImage">
+    <button onclick="uploadProduct()">আপলোড</button>
+
+    <h3>অর্ডারসমূহ</h3>
+    <div id="ordersList"></div>
+  </div>
+</body>
+</html>
